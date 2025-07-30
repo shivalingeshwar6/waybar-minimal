@@ -22,4 +22,4 @@ A Nice Aesthetic Waybar for Waybar Ricing on a Simple Way
     background: rgba(30, 30, 46, 0.95);
 ---
 ### Disclaimier:    
-  This waybar perfectly suits for the dark mode of hyprland if you want to use both light and dark you want to change the background on style.css at #waybar section
+  This waybar perfectly suits for the dark mode of hyprland if you want to use both light and dark you want to change the background on style.css at #waybar section<img width="1900" height="44" alt="2025-07-30-122017_hyprshot" src="https://github.com/user-attachments/assets/11e43b98-d0c2-4a21-ac63-41840c4f8530" />
