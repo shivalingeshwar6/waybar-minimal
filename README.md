@@ -23,4 +23,4 @@ A Nice Aesthetic Waybar for Waybar Ricing on a Simple Way
 ---
 ### Disclaimier:    
   This waybar perfectly suits for the dark mode of hyprland if you want to use both light and dark you want to change the background on style.css at #waybar section
----
+
