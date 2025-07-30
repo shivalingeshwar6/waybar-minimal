@@ -31,4 +31,5 @@ A Nice Aesthetic Waybar for Waybar Ricing on a Simple Way
 
 After the addition of background
 
-<img width="1907" height="58" alt="2025-07-30-142726_hyprshot" src="https://github.com/user-attachments/assets/1b619fdc-2439-456a-9e9a-6e50d03dc51b" />
+<img width="1908" height="65" alt="2025-07-30-143243_hyprshot" src="https://github.com/user-attachments/assets/d27177f7-fd56-47e8-a824-16c1f32e7fa8" />
+
