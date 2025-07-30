@@ -28,3 +28,7 @@ A Nice Aesthetic Waybar for Waybar Ricing on a Simple Way
   This waybar perfectly suits for the dark mode of hyprland if you want to use both light and dark you want to change the background on style.css at #waybar section and wants to Install font <b>JetBrainsMono</b>
   
 <img width="1900" height="44" alt="2025-07-30-122017_hyprshot" src="https://github.com/user-attachments/assets/11e43b98-d0c2-4a21-ac63-41840c4f8530" />
+
+After the addition of background
+
+<img width="1907" height="58" alt="2025-07-30-142726_hyprshot" src="https://github.com/user-attachments/assets/1b619fdc-2439-456a-9e9a-6e50d03dc51b" />
