@@ -13,10 +13,10 @@ A Nice Aesthetic Waybar for Waybar Ricing on a Simple Way
     yay -S waybar wlogout
 ---
 # For Debian Users:
-    sudo apt install waybar blueman networkmanager network-manager-applet wlogout
+    sudo apt install waybar blueman network-manager network-manager-gnome wlogout
 ---
 # For Fedora Users:
-    sudo dnf install waybar blueman networkmanager network-manager-applet wlogout
+    sudo dnf install waybar blueman NetworkManager network-manager-applet wlogout
 ---
 ### Suggested Background for Light_mode:
     background: rgba(30, 30, 46, 0.95);
