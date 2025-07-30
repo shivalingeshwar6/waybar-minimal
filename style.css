@@ -1,0 +1,257 @@
+/* Modern Aesthetic Waybar Theme */
+* {
+    font-family: "JetBrains Mono", "SF Pro Display", "Helvetica Neue", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+}
+
+window#waybar {
+    background: transparent;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+/* Left modules */
+#workspaces {
+    background: rgba(49, 50, 68, 0.8);
+    border-radius: 10px;
+    margin: 4px 8px;
+    padding: 0 4px;
+    border: 1px solid rgba(205, 214, 244, 0.05);
+}
+
+#workspaces button {
+    padding: 6px 12px;
+    margin: 2px;
+    color: rgba(205, 214, 244, 0.6);
+    background: transparent;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+#workspaces button:hover {
+    background: rgba(137, 180, 250, 0.1);
+    color: #89b4fa;
+    border-color: rgba(137, 180, 250, 0.2);
+}
+
+#workspaces button.active {
+    background: linear-gradient(135deg, #89b4fa, #74c7ec);
+    color: #1e1e2e;
+    border-color: rgba(137, 180, 250, 0.3);
+}
+
+#workspaces button.urgent {
+    background: linear-gradient(135deg, #f38ba8, #eba0ac);
+    color: #1e1e2e;
+    animation: urgent 1s ease-in-out infinite alternate;
+}
+
+@keyframes urgent {
+    from { background: rgba(243, 139, 168, 0.3); }
+    to { background: rgba(243, 139, 168, 0.6); }
+}
+
+#window {
+    background: rgba(49, 50, 68, 0.6);
+    border-radius: 10px;
+    margin: 4px 8px;
+    padding: 8px 16px;
+    color: #cdd6f4;
+    border: 1px solid rgba(205, 214, 244, 0.05);
+    transition: all 0.3s ease;
+}
+
+#window.empty {
+    background: transparent;
+    border: none;
+}
+
+/* Center module */
+#clock {
+    background: linear-gradient(135deg, rgba(137, 180, 250, 0.15), rgba(116, 199, 236, 0.15));
+    border-radius: 10px;
+    margin: 4px 8px;
+    padding: 8px 20px;
+    color: #cdd6f4;
+    border: 1px solid rgba(137, 180, 250, 0.2);
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+#clock:hover {
+    background: linear-gradient(135deg, rgba(137, 180, 250, 0.25), rgba(116, 199, 236, 0.25));
+}
+
+/* Right modules */
+#tray,
+#cpu,
+#memory,
+#idle_inhibitor,
+#pulseaudio,
+#network,
+#bluetooth,
+#battery,
+#custom-power {
+    background: rgba(49, 50, 68, 0.8);
+    border-radius: 10px;
+    margin: 4px 2px;
+    padding: 8px 12px;
+    color: #cdd6f4;
+    border: 1px solid rgba(205, 214, 244, 0.05);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#tray {
+    padding: 8px 8px;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: rgba(243, 139, 168, 0.2);
+}
+
+/* Module hover effects */
+#idle_inhibitor:hover,
+#cpu:hover,
+#memory:hover,
+#pulseaudio:hover,
+#network:hover,
+#bluetooth:hover,
+#battery:hover {
+    background: rgba(166, 227, 161, 0.15);
+    border-color: rgba(166, 227, 161, 0.3);
+}
+
+/* Specific module colors */
+#cpu {
+    color: #fab387;
+}
+
+#cpu.warning {
+    color: #f9e2af;
+    background: rgba(249, 226, 175, 0.1);
+}
+
+#cpu.critical {
+    color: #f38ba8;
+    background: rgba(243, 139, 168, 0.1);
+    animation: blink 0.5s linear infinite alternate;
+}
+
+#memory {
+    color: #cba6f7;
+}
+
+#memory.warning {
+    color: #f9e2af;
+    background: rgba(249, 226, 175, 0.1);
+}
+
+#memory.critical {
+    color: #f38ba8;
+    background: rgba(243, 139, 168, 0.1);
+    animation: blink 0.5s linear infinite alternate;
+}
+
+#pulseaudio {
+    color: #a6e3a1;
+}
+
+#pulseaudio.muted {
+    color: #f38ba8;
+    background: rgba(243, 139, 168, 0.1);
+}
+
+#network {
+    color: #74c7ec;
+}
+
+#network.disconnected {
+    color: #f38ba8;
+    background: rgba(243, 139, 168, 0.1);
+}
+
+#bluetooth {
+    color: #89b4fa;
+}
+
+#bluetooth.disabled,
+#bluetooth.off {
+    color: rgba(205, 214, 244, 0.4);
+}
+
+#battery {
+    color: #a6e3a1;
+}
+
+#battery.charging,
+#battery.plugged {
+    color: #f9e2af;
+    background: rgba(249, 226, 175, 0.1);
+}
+
+#battery.critical:not(.charging) {
+    background: rgba(243, 139, 168, 0.15);
+    color: #f38ba8;
+    animation: blink 0.5s linear infinite alternate;
+}
+
+#battery.warning:not(.charging) {
+    color: #f9e2af;
+    background: rgba(249, 226, 175, 0.1);
+}
+
+@keyframes blink {
+    to {
+        background-color: rgba(243, 139, 168, 0.3);
+        color: #ffffff;
+    }
+}
+
+#idle_inhibitor {
+    color: #cba6f7;
+}
+
+#idle_inhibitor.activated {
+    background: rgba(203, 166, 247, 0.15);
+    color: #cba6f7;
+}
+
+#custom-power {
+    color: #f38ba8;
+    font-size: 16px;
+    background: rgba(243, 139, 168, 0.1);
+    border-color: rgba(243, 139, 168, 0.2);
+}
+
+#custom-power:hover {
+    background: rgba(243, 139, 168, 0.2);
+    border-color: rgba(243, 139, 168, 0.4);
+}
+
+/* Tooltip styling */
+tooltip {
+    background: rgba(30, 30, 46, 0.95);
+    border: 1px solid rgba(205, 214, 244, 0.1);
+    border-radius: 8px;
+    color: #cdd6f4;
+}
+
+tooltip label {
+    color: #cdd6f4;
+    padding: 4px 8px;
+}
