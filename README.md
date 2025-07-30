@@ -6,3 +6,6 @@ A Nice Asethetic Waybar for Waybar Ricing on a Simple Way
 2.networkmanager
 3.network-manager-applet
 4.wlogout
+
+# For Arch Users:
+  sudo pacman -S waybar blueman networkmanager network-manager-applet wlogout
