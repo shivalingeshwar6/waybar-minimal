@@ -8,7 +8,7 @@ A Nice Aesthetic Waybar for Waybar Ricing on a Simple Way
 3.Font:JetBrains Mono</br>
 2.networkmanager</br>
 3.network-manager-applet<br>
-4.wlogout
+4.[wlogout](https://github.com/shivalingeshwar6/wlogout-minimal.git)
 
 # For Arch Users:
     sudo pacman -S waybar blueman networkmanager network-manager-applet wlogout pavucontrol
