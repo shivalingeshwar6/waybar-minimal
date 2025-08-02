@@ -9,9 +9,18 @@
 }
 
 window#waybar {
-    background: transparent;
-    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(30, 30, 46, 0.85), rgba(24, 24, 37, 0.85));
+	/* background:transparent; */
+    border-radius: 16px;
+    border: 1px solid rgba(205, 214, 244, 0.15);
+    margin: 8px;
+    padding: 4px 8px;
     transition: all 0.3s ease;
+}
+
+window#waybar:hover {
+    background: linear-gradient(135deg, rgba(30, 30, 46, 0.95), rgba(24, 24, 37, 0.95));
+    border-color: rgba(205, 214, 244, 0.25);
 }
 
 window#waybar.hidden {
@@ -61,13 +70,19 @@ window#waybar.hidden {
 }
 
 #window {
-    background: rgba(49, 50, 68, 0.6);
-    border-radius: 10px;
+    background: linear-gradient(135deg, rgba(49, 50, 68, 0.8), rgba(40, 42, 54, 0.8));
+    border-radius: 12px;
     margin: 4px 8px;
     padding: 8px 16px;
     color: #cdd6f4;
-    border: 1px solid rgba(205, 214, 244, 0.05);
+    border: 1px solid rgba(205, 214, 244, 0.1);
+    font-weight: 500;
     transition: all 0.3s ease;
+}
+
+#window:hover {
+    background: linear-gradient(135deg, rgba(49, 50, 68, 0.9), rgba(40, 42, 54, 0.9));
+    border-color: rgba(205, 214, 244, 0.2);
 }
 
 #window.empty {
@@ -77,25 +92,27 @@ window#waybar.hidden {
 
 /* Center module */
 #clock {
-    background: linear-gradient(135deg, rgba(137, 180, 250, 0.15), rgba(116, 199, 236, 0.15));
-    border-radius: 10px;
+    background: linear-gradient(135deg, rgba(137, 180, 250, 0.2), rgba(116, 199, 236, 0.2));
+    border-radius: 12px;
     margin: 4px 8px;
-    padding: 8px 20px;
+    padding: 10px 24px;
     color: #cdd6f4;
-    border: 1px solid rgba(137, 180, 250, 0.2);
-    font-weight: 600;
-    font-size: 14px;
+    border: 1px solid rgba(137, 180, 250, 0.3);
+    font-weight: 700;
+    font-size: 15px;
     transition: all 0.3s ease;
 }
 
 #clock:hover {
-    background: linear-gradient(135deg, rgba(137, 180, 250, 0.25), rgba(116, 199, 236, 0.25));
+    background: linear-gradient(135deg, rgba(137, 180, 250, 0.3), rgba(116, 199, 236, 0.3));
+    border-color: rgba(137, 180, 250, 0.5);
 }
 
 /* Right modules */
 #tray,
 #cpu,
 #memory,
+#backlight,
 #idle_inhibitor,
 #pulseaudio,
 #network,
@@ -128,12 +145,13 @@ window#waybar.hidden {
 #idle_inhibitor:hover,
 #cpu:hover,
 #memory:hover,
+#backlight:hover,
 #pulseaudio:hover,
 #network:hover,
 #bluetooth:hover,
 #battery:hover {
-    background: rgba(166, 227, 161, 0.15);
-    border-color: rgba(166, 227, 161, 0.3);
+    background: linear-gradient(135deg, rgba(166, 227, 161, 0.2), rgba(148, 226, 213, 0.2));
+    border-color: rgba(166, 227, 161, 0.4);
 }
 
 /* Specific module colors */
@@ -234,24 +252,26 @@ window#waybar.hidden {
 #custom-power {
     color: #f38ba8;
     font-size: 16px;
-    background: rgba(243, 139, 168, 0.1);
-    border-color: rgba(243, 139, 168, 0.2);
+    background: linear-gradient(135deg, rgba(243, 139, 168, 0.2), rgba(235, 160, 172, 0.2));
+    border-color: rgba(243, 139, 168, 0.3);
 }
 
 #custom-power:hover {
-    background: rgba(243, 139, 168, 0.2);
-    border-color: rgba(243, 139, 168, 0.4);
+    background: linear-gradient(135deg, rgba(243, 139, 168, 0.3), rgba(235, 160, 172, 0.3));
+    border-color: rgba(243, 139, 168, 0.5);
 }
 
 /* Tooltip styling */
 tooltip {
-    background: rgba(30, 30, 46, 0.95);
-    border: 1px solid rgba(205, 214, 244, 0.1);
-    border-radius: 8px;
+    background: linear-gradient(135deg, rgba(30, 30, 46, 0.95), rgba(24, 24, 37, 0.95));
+    border: 1px solid rgba(205, 214, 244, 0.2);
+    border-radius: 10px;
     color: #cdd6f4;
+    font-weight: 500;
+    padding: 8px 12px;
 }
 
 tooltip label {
     color: #cdd6f4;
-    padding: 4px 8px;
+    padding: 2px 4px;
 }
