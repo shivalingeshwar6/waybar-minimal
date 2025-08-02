@@ -21,8 +21,7 @@ A Nice Aesthetic Waybar for Waybar Ricing on a Simple Way
 # For Fedora Users:
     sudo dnf install waybar blueman NetworkManager network-manager-applet wlogout pavucontrol 
 ---
-### Suggested Background for Light_mode:
-    background: rgba(30, 30, 46, 0.95);
+<pre><b>!Note : Make Uncommand the background in the style will give you a transparent look and command the existing background.</b></pre>
 ---
 ### Disclaimier:    
   This waybar perfectly suits for the dark mode of hyprland if you want to use both light and dark you want to change the background on style.css at #waybar section and wants to Install font <b>JetBrainsMono</b>
