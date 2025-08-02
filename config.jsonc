@@ -18,6 +18,7 @@
         "cpu",
         "memory",
         "idle_inhibitor",
+        "backlight",
         "pulseaudio",
         "network",
         "bluetooth",
@@ -106,6 +107,18 @@
             "activated": "󰒳",
             "deactivated": "󰒲"
         }
+    },
+    
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{icon} {percent}%",
+        "format-icons": ["󰃞", "󰃟", "󰃠"],
+        "scroll-step": 5,
+        "smooth-scrolling-threshold": 1,
+        "tooltip": true,
+        "tooltip-format": "Brightness: {percent}%",
+        "on-scroll-up": "brightnessctl set 5%+",
+        "on-scroll-down": "brightnessctl set 5%-"
     },
     
     "pulseaudio": {
